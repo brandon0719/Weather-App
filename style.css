@@ -81,3 +81,9 @@ h1.temp {
     position: absolute;
     top: 0; 
 }
+
+.error {
+    color: red;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
