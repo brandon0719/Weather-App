@@ -84,7 +84,6 @@ let weather = {
             }
             dayData[day].push(forecast);
         });
-
         for (let day in dayData) {
             let forecasts = dayData[day];
             let dayContainer = document.createElement('div');
