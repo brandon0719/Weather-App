@@ -8,15 +8,19 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 120%;
-}
 
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Align items in the center */
+    justify-content: start; /* Align content to the start */
+}
 .card {
     background: #000000d0;
     color: white;
     padding: 2em;
     border-radius: 30px;
     width: 100%;
-    max-width: 420px;
+    max-width: 450px;
     margin: 1em;
 }
 
@@ -87,3 +91,32 @@ h1.temp {
     opacity: 1;
     transition: opacity 0.5s ease-out;
 }
+.forecast-container {
+    width: 100%;
+    max-width: 700px; /* Adjust as needed */
+    background: #000000d0;
+    color: white;
+    padding: 0.75em 2em;
+    border-radius: 30px;
+}
+
+.forecast-day {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px; /* Space between each day */
+}
+
+.forecast-item {
+    text-align: center;
+    /* Other styling for forecast items */
+}
+
+
+.day-label {
+    color: white;
+    margin-bottom: 10px; /* Add some spacing below the day label */
+    /* Add any additional styling you want for the day labels */
+}
+
+
