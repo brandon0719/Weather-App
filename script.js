@@ -1,5 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 let weather = {
-    "apiKey": "0f54791a3b6d22accc14a27f2a2c72f8",
+    "apiKey": process.env.api_key,
 
     //DISPLAY CURRENT WEATHER
     fetchWeather: function (city) {
